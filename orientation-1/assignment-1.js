@@ -1,21 +1,23 @@
 import crypto from "crypto";
 
-function myfunction (){
-let i = 0
+//______________________>>>>>>My solution<<<<<<<<<<<<<<________________
 
-for (i = 1; i > 0;){
+// function myfunction (){
+// let i = 0
 
-    const input = `100xDevs ${Math.random() * 300}`
-    const hash = crypto.createHash('sha256').update(input).digest('hex');
-    console.log(input)
-    console.log(hash)
-    if (hash.startsWith('0000')){
-    console.log('Found : ', hash)
-    break;
-    } 
-}
-}
-myfunction();
+// for (i = 1; i > 0;){
+
+//     const input = `100xDevs ${Math.random() * 300}`
+//     const hash = crypto.createHash('sha256').update(input).digest('hex');
+//     console.log(input)
+//     console.log(hash)
+//     if (hash.startsWith('000000')){
+//     console.log('Found : ', hash)
+//     break;
+//     } 
+// }
+// }
+// myfunction();
 
 // Function to find an input string that produces a hash starting with '00000'
 function findHashWithPrefix(prefix) {
